@@ -450,7 +450,7 @@ class Player(PhysicsEntity):
 
         Bounty difficulty: ⭐☆☆☆☆ (1/5)
 
-        Developed by: ______________________________
+        Developed by: Amit Sahaf - 197821
         """
         if self.collisions["down"]:
             self.air_time = 0
