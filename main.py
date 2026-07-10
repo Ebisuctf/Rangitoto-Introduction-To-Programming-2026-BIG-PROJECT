@@ -458,9 +458,9 @@ class Game:
 
         Bounty difficulty: ⭐⭐☆☆☆ (2/5)
 
-        Developed by: ______________________________
+        Developed by: Amit Sahaf - 197821
         """
-        for event in pygame.event.get():
+        for event in pygame.event.get(): 
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
