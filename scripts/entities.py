@@ -492,14 +492,16 @@ class Player(PhysicsEntity):
 
         Bounty difficulty: ⭐⭐☆☆☆ (2/5)
 
-        Developed by: ______________________________
+        Developed by: Amit Sahaf - 197821
         """
-        if not self.wall_slide:
-            if self.air_time > 4:
-                self.set_action("jump")
-            elif movement[0] != 0:
+        if self.wall_slide:
+            return
+        elif self.air_time > 4:
+            self.set_action("jump")
+        elif self.air_time <= 4:
+            if movement[0] != 0:
                 self.set_action("run")
-            else:
+            elif movement[0] == 0:
                 self.set_action("idle")
 
     def _spawn_dash_burst_particles(self):
